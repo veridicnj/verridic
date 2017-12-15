@@ -2,7 +2,7 @@
 properties([
     [$class: 'GithubProjectProperty',
     displayName: '',
-    projectUrlStr: 'https://github.com/razOrganization/dir1.git/'],
+    projectUrlStr: 'https://github.com/veridicnj/verridic.git/'],
     pipelineTriggers([githubPush()])])
 
 pipeline {
@@ -22,7 +22,7 @@ pipeline {
         }
         stage('updownstream') {
             steps {
-                build 'razOrganization/dir1/master'
+                build 'veridicnj/veridic2/master'
             }
         }
     }
